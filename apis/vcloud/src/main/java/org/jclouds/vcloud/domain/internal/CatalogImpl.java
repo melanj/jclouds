@@ -182,4 +182,9 @@ public class CatalogImpl extends LinkedHashMap<String, ReferenceType> implements
       return (this == o) ? 0 : getHref().compareTo(o.getHref());
    }
 
+   @Override
+   public String getRelationship() {
+	   throw new UnsupportedOperationException();
+   }
+
 }
